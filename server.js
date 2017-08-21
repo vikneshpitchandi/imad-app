@@ -11,8 +11,8 @@ app.use(morgan('combined'));
 var articles={
    'article-one': {
     title:'Article one',
-    heading:'Article one',
     date:'21-8-2017',
+    heading:'Article one',
     content:`<p> This is the content of the articel1 web page.This is the content of the articel1 web page.
                 This is the content of the articel1 web page.This is the content of the articel1 web page.
             </p>
@@ -28,8 +28,8 @@ var articles={
     },
    'article-two':{
     title:'Article two',
-    heading:'Article two',
     date:'21-7-2017',
+    heading:'Article two',
     content:`<p> This is the content of the articel1 web page.This is the content of the articel2 web page.
                 This is the content of the articel1 web page.This is the content of the articel2 web page.
             </p>
@@ -45,8 +45,8 @@ var articles={
     },
     'article-three':{
     title:'Article three',
-    heading:'Article three',
     date:'21-6-2017',
+    heading:'Article three',
     content:`<p> This is the content of the articel1 web page.This is the content of the articel3 web page.
                 This is the content of the articel1 web page.This is the content of the articel3 web page.
             </p>
