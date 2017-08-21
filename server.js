@@ -75,7 +75,7 @@ function createtemplate(data) // createtemplate is a function which is to be cal
 <head>
     <title> ${title}</title>
     <meta name='viewport' content="width=device=width ,initial-scale=1"/>
-    <link href="ui/style.css"  rel="stylesheet"/>
+    <link href="/ui/style.css"  rel="stylesheet"/>
     </head>
     
     <body>
@@ -108,6 +108,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
  
+ 
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
