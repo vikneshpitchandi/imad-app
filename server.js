@@ -67,7 +67,7 @@ function createtemplate(data) // createtemplate is a function which is to be cal
 {
  var title=data.title;
  var date=data.date;
- var heading=data.content;
+ var heading=data.heading;
  var content=data.content;
  //htmltemplate is a variable which contains the html code for which contents are accessed by passing argument to createtemplate(data) function
  var htmltemplate=`                                   
