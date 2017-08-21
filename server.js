@@ -105,18 +105,7 @@ app.get('/:articleName',function(reqq,res)   // /articleName refers to the html,
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article1',function(req,res)
-{
-  res.sendFile(path.join(__dirname,'ui','article-one.html')); 
-});
-app.get('/article2',function(req,res)
-{
-  res.sendFile(path.join(__dirname,'ui','article-two.html'));  
-});
-app.get('/article3',function(req,res)
-{
-  res.sendFile(path.join(__dirname,'ui','article-three.html'));  
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
