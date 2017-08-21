@@ -4,6 +4,9 @@ body {
     margin-top: 60px;
 }
 
+.center {
+    text-align: center;
+}
 .container {
     text-align: center;
 }
