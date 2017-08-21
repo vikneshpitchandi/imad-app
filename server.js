@@ -96,7 +96,7 @@ function createtemplate(data) // createtemplate is a function which is to be cal
  `;
  return htmltemplate;
 }
-app.get('/:articleName',function(reqq,res)   // /articleName refers to the html,css or any any type of file assigned to it .But /:articleName refers to the value of articleName
+app.get('/:articleName',function(req,res)   // /articleName refers to the html,css or any any type of file assigned to it .But /:articleName refers to the value of articleName
 {     
     var articleName=req.params.articleName; // the code which extracts the vlue from articleName
     res.send(createtemplate(articles[articleName])); //sends apage which is provided by the return value of createtemplate(articles[articleName]) .This function takes articles object as parameter and the articles object takes articleName value which uses the path entered by the user as  index
