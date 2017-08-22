@@ -11,7 +11,7 @@ button.onclick=function()
         {
             if(request.status===200) // if the requset is successful
             {
-                var counter=request.responseText();                            // gets the text which is responding to the webpage web requseted
+                var counter=request.responseText;                            // gets the text which is responding to the webpage web requseted
                 var span=document.getElementById('count');
                 span.innerHTML=counter.toString();
                 
