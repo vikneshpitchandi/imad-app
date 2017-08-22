@@ -96,6 +96,17 @@ function createtemplate(data) // createtemplate is a function which is to be cal
  `;
  return htmltemplate;
 }
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+ 
+  var counter=0;
+app.get('/counter', function (req, res) {
+    counter=counter+1;
+  res.send(counter.toString());
+});
+
 app.get('/:articleName',function(req,res)   // /articleName refers to the html,css or any any type of file assigned to it .But /:articleName refers to the value of articleName
 {     
     var articleName=req.params.articleName; // the code which extracts the vlue from articleName
@@ -103,19 +114,6 @@ app.get('/:articleName',function(req,res)   // /articleName refers to the html,c
     
 });
 
-
-var counter=0;
-app.get('/counter', function (req, res) {
-    counter=counter+1;
-  res.send(counter.toString());
-});
-
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
- 
- 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
