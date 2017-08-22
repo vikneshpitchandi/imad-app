@@ -102,12 +102,13 @@ app.get('/:articleName',function(req,res)   // /articleName refers to the html,c
     res.send(createtemplate(articles[articleName])); //sends apage which is provided by the return value of createtemplate(articles[articleName]) .This function takes articles object as parameter and the articles object takes articleName value which uses the path entered by the user as  index
     
 });
+
 var counter=0;
-app.get('/counter',function(req,res)
-{
- counter=counter+1;
- res.send(counter.toString());
+app.get('/counter',function(req,res){
+    counter=counter+1;
+    res.send(counter.toString());
 });
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
